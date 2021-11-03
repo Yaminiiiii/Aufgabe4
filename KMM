@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int C, A, B, KMM, X, Y;
+    cout << "GEBEN SIE ZWEI NUMMER: ";
+    cin >> A >> B;
+    X=A;
+    Y=B;
+    x= A % B;
+    while (C!=0)
+    {
+        A=B;
+        B=C;
+        C=A%B;
+    }
+    KMM = (X*Y)/B;
+    cout << "KMM : " << KMM;
+    return 0;
+}
