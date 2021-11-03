@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int A , B;
+    cout << "GEBEN SIE WEIT: ";
+    cin >> A;
+    cout << "GEBEN SIE GRÖßE: ";
+    cin >> B;
+    for (int i = 0; i < B; ++i) {
+        if((i%2)==0) {
+            for (int j = 0; j < A; j += 2) {
+                cout << "*";
+                if (j != A - 1)
+                    for (int k = 0; k < 2; k += 2)
+                        cout << "#";
+            }
+        }
+        else
+            for (int j = 0; j < A; j+=2) {
+                cout << "#";
+                if (j != A-1)
+                    for (int k = 0; k < 2; k+=2)
+                        cout << "*";
+            }
+        cout << endl;
+    }
+    return 0;
+}
