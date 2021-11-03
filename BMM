@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int C, A, B;
+    cout << "Gben Sie 2 Nummer: ";
+    cin >> A >> bB;
+    C= A % B;
+    while (C!=0)
+    {
+        A=B;
+        B=C;
+        C=A%B;
+    }
+    cout << "\nBMM: " << B;
+    return 0;
+}
