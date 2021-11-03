@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N, SUM = 1;
+    cout << "GEBEN SIE EINE NUMMER: ";
+    cin >> N;
+    for (int i = 1; SUM < N ; ++i)
+        SUM += SUM * i;
+    if (SUM == N)
+        cout << "JA!";
+    else
+        cout << "NEIN!";
+    return 0;
+}
